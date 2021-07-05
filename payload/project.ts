@@ -3,27 +3,40 @@ import { IProject } from '../component/project/IProject';
 const project: IProject.Payload = {
   disable: false,
   list: [
-    {
-      title: '코리아세븐 기간계 업무시스템 구축 프로젝트',
-      startedAt: '2021-06',
-      where: '코리아세븐 (KOREA SEVEN)',
-      descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
-      ],
-    },
+    // {
+    //   title: '코리아세븐 기간계 업무시스템 구축 프로젝트',
+    //   startedAt: '2021-06',
+    //   where: '코리아세븐 (KOREA SEVEN)',
+    //   descriptions: [
+    //     { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
+    //     { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
+    //     { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
+    //     { content: 'Proin bibendum non nibh eu aliquet' },
+    //   ],
+    // },
     {
       title: '롯데정보통신 데이터 전환 솔루션 구축',
       startedAt: '2020-10',
       endedAt: '2021-05',
       where: '롯데정보통신 (LOTTE Data Communication Company)',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-        { content: 'Proin bibendum non nibh eu aliquet' },
+        { content: '롯데정보통신 사내 아이디어 공모전 신사업 부문 수상' },
+        {
+          content: '자사 보유 DB Migration Solution 고도화',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: '레거시 모듈의 Core(전환엔진) 추출' },
+            { content: 'Web 환경을 기반으로 하는 Soulution 개발' },
+          ],
+        },
+        // {
+        //   content: '',
+        //   weight: 'MEDIUM',
+        //   descriptions: [
+        //     { content: '레거시 모듈의 Core(전환엔진) 추출' },
+        //     { content: 'Web 환경을 기반으로 하는 Soulution 개발' },
+        //   ],
+        // },
       ],
     },
     {
@@ -32,17 +45,17 @@ const project: IProject.Payload = {
       endedAt: '2020-09',
       where: '롯데슈퍼 (LOTTE Super)',
       descriptions: [
-        { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-        { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-        { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
+        { content: '롯데슈퍼 가맹점주를 대상으로, 상품 발주용으로 사용할 어플리케이션 개발' },
         {
-          content: '굿네이버스에 후원하는 회원을 관리하는 시스템 구축',
+          content: '하이브리드 방식의 App 개발',
           weight: 'MEDIUM',
           descriptions: [
-            { content: 'Integer ut libero eu libero mattis rutrum at at urna' },
-            { content: 'Integer non turpis ante' },
+            { content: '캐모마일 프레임워크를 사용하여 백엔드 환경 구성' },
+            { content: '롯데정보통신에서 Spring 을 기반으로 개발한 프레임워크' },
+            { content: 'HTML/CSS 와 jQuery 를 사용하여 UI 구현' },
           ],
         },
+        { content: '단위/통합테스트 참여를 통한 프로젝트 품질 향상 및 안정화 기여' },
       ],
     },
     {
@@ -57,19 +70,19 @@ const project: IProject.Payload = {
           weight: 'MEDIUM',
           descriptions: [
             { content: '기존 데이터베이스 구조 분석 및 재설계, 데이터 이관' },
-            { content: '전자정부프레임워크 도입' },
+            { content: '전자정부프레임워크를 도입하여 백엔드 개발' },
             { content: 'Nexacro UI 를 사용한 화면 구성' },
           ],
         },
-        { content: 'REST API 를 사용하여 굿네이버스의 다른 시스템과 인터페이스 개발' },
         {
-          content: '회원이 정기/일시적으로 납부하는 회비 관리 모듈 담당',
+          content: '회원이 정기/일시적으로 납부하는 회비관리 모듈 담당',
           weight: 'MEDIUM',
           descriptions: [
             { content: '신용카드 등 다양한 방식의 회비결제 모듈 개발' },
-            { content: '결제사 (KG이니시스) 모듈을 사용한 가상계좌 납부방식 개발' },
+            { content: '결제사 (KG이니시스) 모듈을 사용한 가상계좌 납부방식 구현' },
           ],
         },
+        { content: 'REST API 를 사용하여 다른 내부 시스템과의 인터페이스 개발' },
       ],
     },
   ],
