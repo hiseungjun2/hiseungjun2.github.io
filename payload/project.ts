@@ -3,17 +3,26 @@ import { IProject } from '../component/project/IProject';
 const project: IProject.Payload = {
   disable: false,
   list: [
-    // {
-    //   title: '코리아세븐 기간계 업무시스템 구축 프로젝트',
-    //   startedAt: '2021-06',
-    //   where: '코리아세븐 (KOREA SEVEN)',
-    //   descriptions: [
-    //     { content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit' },
-    //     { content: 'Integer massa magna, feugiat commodo arcu sed, sagittis sollicitudin tortor' },
-    //     { content: 'Nullam diam ex, interdum nec lacus vel, ultrices pretium sapien' },
-    //     { content: 'Proin bibendum non nibh eu aliquet' },
-    //   ],
-    // },
+    {
+      title: '코리아세븐 기간계 업무시스템 구축 프로젝트',
+      startedAt: '2021-06',
+      endedAt: '2022-02',
+      where: '코리아세븐 (KOREA SEVEN)',
+      descriptions: [
+        { content: '코리아세븐 기간계업무(FD지원/통합정산/자산관리) 시스템 구축 프로젝트' },
+        {
+          content: '코리아세븐이 보유중인 자산/물품을 관리하는 자산관리시스템 개발 담당',
+          weight: 'MEDIUM',
+          descriptions: [
+            { content: '본사 및 점포가 보유한 기초자산데이터 파악 및 분석' },
+            { content: '신규/리뉴얼/폐점 등 점포에서 발생하는 공사 프로세스 정의' },
+            { content: '외부 전자결재 모듈 연동을 통한 업무 진행 개발' },
+          ],
+        },
+        { content: 'Spring Framework 기반 자사 프레임워크를 사용한 백엔드 구성' },
+        { content: 'Nexacro UI 사용한 화면 개발 진행' },
+      ],
+    },
     {
       title: '롯데정보통신 데이터 전환 솔루션 구축',
       startedAt: '2020-10',
